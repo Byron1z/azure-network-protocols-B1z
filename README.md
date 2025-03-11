@@ -24,6 +24,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create a Windows and Linux Virtual Machine
 - Download Wireshark
 - Observe ICMP Traffic
+- Configuring a Firewall [Network Security Group]
 - Observe SSH Traffic
 - Observe DHCP Traffic
 - Observe DNS Traffic
@@ -41,7 +42,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/dIW36H7.png" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<h3>Create Windows 10 VM</h3>
+<h3>Create Windows 10 Pro VM</h3>
 <p>
 Now create your Windows Virtual Machine.
 </p>
@@ -50,7 +51,7 @@ Now create your Windows Virtual Machine.
 </p>
 <br />
 
-<h3>Create Linux VM</h3>
+<h3>Create Linux Ubuntu VM</h3>
 <p>
   Then create the Linux Virtual Machine
 </p>
@@ -106,5 +107,50 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
 </p>
 <p>
   The whole data we inspected was the ICMP Echo Request, meaning it was from Windows VM and the next packet is the Echo Reply from the Linux VM.
+</p>
+<br />
+
+<h3>Configuring a Firewall [Network Security Group]</h3>
+<p>
+  Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in Powershell.
+</p>
+<p>
+  <img src="https://i.imgur.com/LeckwaD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Open the Network Security Group your Ubuntu VM is using and disable incoming 
+  
+(inbound) ICMP traffic.
+</p>
+<p>
+  <img src="https://i.imgur.com/hYg1GQO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/O7aH0nP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Hop back in the Windows 10 VM, Observe the ICMP traffic in WireShark and the command line Ping activity.
+</p>
+<p>
+<img src="https://i.imgur.com/ErvCS4U.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
+<img src="https://i.imgur.com/wxZzEY3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We Configured a Rule that Denied Incoming ICMP traffic from any source to any destination for the Linux VM.
+
+  Now Re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by deleting the Network Security rule. 
+</p>
+<p>
+  <img src="https://i.imgur.com/1z6ICuf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working).
+</p>
+<p>
+  <img src="https://i.imgur.com/Cjp3y8A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Stop the ping activity with Control-C.
+</p>
+<p>
+  <img src="https://i.imgur.com/8sLQVcT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
