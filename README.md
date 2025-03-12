@@ -219,3 +219,45 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <br />
 
 <h3>Observe DNS Traffic</h3>
+<p>
+  Back in Wireshark, filter for DNS traffic only 
+</p>
+<p>
+  <img src="https://i.imgur.com/GZrualt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  From your Windows 10 VM within a command line, use nslookup to see what disney.com and pixar.com’s IP addresses are.
+
+  Observe the DNS traffic being shown in WireShark 
+</p>
+<p>
+   <img src="https://i.imgur.com/0lvCDgF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/QYc9QXY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  All DNS does is resolve host (Human Readable) names into IP Addresses.
+</p>
+<br />
+
+<h3>Observe RDP Traffic</h3>
+<p>
+  Back in Wireshark, filter for RDP traffic only (tcp.port == 3389) 
+</p>
+<p>
+  <img src="https://i.imgur.com/Ctc83Zi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Observe the immediate non-stop spam of traffic!
+</p>
+<p>
+  <img src="https://i.imgur.com/TFDN3L4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
+
+  It's because the RDP (protocol) is constantly showing you a live stream from one computer/server to another, therefore the traffic is always being transmitted.
+</p>
+<br />
+<p>
+  Now that we're finished observing the Network, Don't forget to clean up your Azure Environment! This will prevent you from unnecessary incurring additional charges. 
+</p>
