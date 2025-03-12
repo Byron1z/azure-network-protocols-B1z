@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
+<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines using WireShark</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -72,7 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/mumFoXf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within your Windows 10 Virtual Machine, Download Wireshark on VM.
+Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
 </p>
 <p>
   <img src="https://i.imgur.com/sA2E4sp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -181,4 +181,41 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 </p>
 <p>
   <img src="https://i.imgur.com/ZHmGyAW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/F9Mkjk6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/B0JGJJZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+  Exit the SSH connection by typing ‘exit’ and pressing [Enter]
+</p>
+<p>
+  <img src="https://i.imgur.com/GzpIg4I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<h3>Observe DHCP Traffic</h3>
+<p>
+  Back in Wireshark, filter for DHCP traffic only 
+</p>
+<p>
+   <img src="https://i.imgur.com/jLx2QAw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  From your Windows 10 VM, attempt to issue your VM a new IP address from the command line 
+
+  Open PowerShell as Admin and run: ipconfig /renew 
+</p>
+<p>
+  <img src="https://i.imgur.com/wBIJaj5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Trying this gave me an Error, 
+
+  Let's try this method and Observe the DHCP traffic appearing in WireShark.
+</p>
+<p>
+  <img src="https://i.imgur.com/AyhzyA5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/6omwHYO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<h3>Observe DNS Traffic</h3>
