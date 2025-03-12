@@ -154,3 +154,31 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/8sLQVcT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<h3>Observe SSH Traffic</h3>
+<p>
+  Log back into the windows-vm, head back in WireShark and start a packet capture up.
+
+  Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
+</p>
+<p>
+  <img src="https://i.imgur.com/bkpT8wD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
+
+  Open PowerShell, and type: ssh labuser@private ip address 
+
+  Then Type the commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark 
+</p>
+<p>
+  <img src="https://i.imgur.com/mupELhr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ig8lFEA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/PTuVVvC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Whats cool about SSH is all the Traffic is Encrypted.
+</p>
+<p>
+  <img src="https://i.imgur.com/ZHmGyAW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
