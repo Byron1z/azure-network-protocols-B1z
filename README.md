@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create a Resource Group
 - Create a Windows and Linux Virtual Machine
-- Download Wireshark
+- Download WireShark
 - Observe ICMP Traffic
 - Configuring a Firewall [Network Security Group]
 - Observe SSH Traffic
