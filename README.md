@@ -174,7 +174,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/PTuVVvC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Whats cool about SSH is all the Traffic is Encrypted.
+  What's cool about SSH is all the Traffic is Encrypted.
 </p>
 <p>
   <img src="https://i.imgur.com/ZHmGyAW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
