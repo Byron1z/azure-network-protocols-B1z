@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines using WireShark</h1>
+<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines using Wireshark</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -22,9 +22,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create a Resource Group
 - Create a Windows and Linux Virtual Machine
-- Download WireShark
+- Download Wireshark
 - Observe ICMP Traffic
-- Configuring a Firewall [Network Security Group]
+- Configuring a Firewall (Network Security Group)
 - Observe SSH Traffic
 - Observe DHCP Traffic
 - Observe DNS Traffic
@@ -96,7 +96,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
    <img src="https://i.imgur.com/3GdDS6m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Observe ping requests and replies within WireShark,
+  Observe ping requests and replies within Wireshark,
 </p>
 <p>
   <img src="https://i.imgur.com/GRXNNu6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -107,7 +107,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
 </p>
 <br />
 
-<h3>Configuring a Firewall [Network Security Group]</h3>
+<h3>Configuring a Firewall (Network Security Group)</h3>
 <p>
   Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in Powershell.
 </p>
@@ -124,7 +124,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
   <img src="https://i.imgur.com/O7aH0nP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Hop back in the Windows 10 VM, Observe the ICMP traffic in WireShark and the command line Ping activity.
+  Hop back in the Windows 10 VM, Observe the ICMP traffic in Wireshark and the command line Ping activity.
 </p>
 <p>
 <img src="https://i.imgur.com/ErvCS4U.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
@@ -139,7 +139,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/1z6ICuf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working).
+  Back in the Windows 10 VM, observe the ICMP traffic in Wireshark and the command line Ping activity (should start working).
 </p>
 <p>
   <img src="https://i.imgur.com/Cjp3y8A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -154,7 +154,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe SSH Traffic</h3>
 <p>
-  Log back into the windows-vm, head back in WireShark and start a packet capture up.
+  Log back into the windows-vm, head back in Wireshark and start a packet capture up.
 
   Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
 </p>
@@ -166,7 +166,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Open PowerShell, and type: ssh labuser@private ip address 
 
-  Then Type the commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark 
+  Then Type the commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in Wireshark 
 </p>
 <p>
   <img src="https://i.imgur.com/mupELhr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -207,7 +207,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   Trying this gave me an Error, 
 
-  Let's try this method and Observe the DHCP traffic appearing in WireShark.
+  Let's try this method and Observe the DHCP traffic appearing in Wireshark.
 </p>
 <p>
   <img src="https://i.imgur.com/AyhzyA5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -225,7 +225,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   From your Windows 10 VM within a command line, use nslookup to see what disney.com and pixar.com’s IP addresses are.
 
-  Observe the DNS traffic being shown in WireShark 
+  Observe the DNS traffic being shown in Wireshark 
 </p>
 <p>
    <img src="https://i.imgur.com/0lvCDgF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
