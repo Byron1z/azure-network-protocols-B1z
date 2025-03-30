@@ -120,12 +120,26 @@ Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   Back in Azure, Open the Network Security Group your Ubuntu VM is using and disable incoming 
   
 (inbound) ICMP traffic.
+
+To disable ICMP Traffic, we would create a rule to block inbound ICMP traffic in an Azure NSG, which would look like this:
+
+- Direction: Inbound
+
+- Protocol: ICMP
+
+- Source: Any (or specify a specific source)
+
+- Destination: Any (or specify a specific destination)
+
+- Action: Deny
 </p>
 <p>
   <img src="https://i.imgur.com/hYg1GQO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/O7aH0nP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  This rule would prevent any ICMP traffic (such as ping requests) from being received by your Ubuntu VM or resource.
+  
   Hop back in the Windows 10 VM, Observe the ICMP traffic in Wireshark and the command line Ping activity.
 </p>
 <p>
