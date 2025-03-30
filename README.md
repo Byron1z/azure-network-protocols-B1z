@@ -121,7 +121,7 @@ Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   
 (inbound) ICMP traffic.
 
-To disable ICMP Traffic, we would create a rule to block inbound ICMP traffic in an Azure NSG, which would look like this:
+To disable ICMP Traffic, we would create specific security rules to block inbound ICMP traffic in an Azure NSG, which would look like this:
 
 - Direction: Inbound
 
@@ -149,7 +149,7 @@ To disable ICMP Traffic, we would create a rule to block inbound ICMP traffic in
 <p>
 We Configured a Rule that Denied Incoming ICMP traffic from any source to any destination for the Linux VM.
 
-  Now Re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by deleting the Network Security rule. 
+  Now Re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by Deleting the Network Security rule. 
 </p>
 <p>
   <img src="https://i.imgur.com/1z6ICuf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -161,7 +161,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/Cjp3y8A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Stop the ping activity with Control-C.
+  Stop the ping activity with "Control-C".
 </p>
 <p>
   <img src="https://i.imgur.com/8sLQVcT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
