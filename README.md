@@ -29,7 +29,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Observe DHCP Traffic
 - Observe DNS Traffic
 - Observe RDP Traffic
-
+<br />
 <h2>Actions and Observations</h2>
 
 <h3>Create a Resource Group</h3>
