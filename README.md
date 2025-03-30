@@ -212,11 +212,13 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Let's try this method and Observe the DHCP traffic appearing in Wireshark.
 
   Here's a Script to Run in PowerShell as Admin.
-  Open Notepad. Type
+  
+  Open Notepad, Type
+  
   - ipconfig /release
   - ipconfig /renew
 
-  Save Script in ProgramData as a ".bat" extension (not .txt). You could name the file "dhcp.bat" for convenience.
+  Save the Script in ProgramData as a file with a ".bat" extension (Not ".txt"). For convenience, you could name the file "dhcp.bat."
 
   Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
 
