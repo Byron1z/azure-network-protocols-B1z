@@ -111,7 +111,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
 
 <h3>Configuring a Firewall (Network Security Group)</h3>
 <p>
-  Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in Powershell.
+  Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in PowerShell.
 </p>
 <p>
   <img src="https://i.imgur.com/LeckwaD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -211,14 +211,14 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Let's try this method and Observe the DHCP traffic appearing in Wireshark.
 
-  Here's a Script to Run in Powershell as Admin.
+  Here's a Script to Run in PowerShell as Admin.
   Open Notepad. Type
   - ipconfig /release
   - ipconfig /renew
 
   Save Script in ProgramData as a ".bat" extension (not .txt). You could name the file "dhcp.bat" for convenience.
 
-  Go to Powershell as Admin, cd (Change Directory) to "c:\programdata"
+  Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
 
   Then Run the File, ".\dhcp.bat"
 
