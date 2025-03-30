@@ -21,7 +21,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - Create a Resource Group
-- Create a Windows and Linux Virtual Machine
+- Create a Windows 10 & Linux Ubuntu VM
 - Download Wireshark
 - Observe ICMP Traffic
 - Configuring a Firewall (Network Security Group)
