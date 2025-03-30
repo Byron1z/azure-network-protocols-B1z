@@ -156,7 +156,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe SSH Traffic</h3>
 <p>
-  Log back into the Windows-VM, head back in Wireshark and start a packet capture up.
+  Log back into the Windows-VM, go back in Wireshark and start a packet capture up.
 
   Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
 </p>
@@ -164,9 +164,9 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/bkpT8wD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
+  From your Windows 10 VM, “SSH into” your Linux Ubuntu Virtual Machine (via its Private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
 
-  Open PowerShell, and type: ssh labuser@private ip address 
+  Open PowerShell, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
 
   Then Type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
 </p>
