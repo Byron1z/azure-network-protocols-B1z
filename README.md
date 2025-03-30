@@ -210,6 +210,19 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Trying this gave me an Error, 
 
   Let's try this method and Observe the DHCP traffic appearing in Wireshark.
+
+  Here's a Script to Run in Powershell as Admin.
+  Open Notepad. Type
+  - ipconfig /release
+  - ipconfig /renew
+
+  Save Script in ProgramData as a ".bat" extension (not .txt). You could name the file "dhcp.bat" for convenience.
+
+  Go to Powershell as Admin, cd (Change Directory) to "c:\programdata"
+
+  Then Run the File, ".\dhcp.bat"
+
+  Note the VM will loose connection but will automatically renew.
 </p>
 <p>
   <img src="https://i.imgur.com/AyhzyA5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
