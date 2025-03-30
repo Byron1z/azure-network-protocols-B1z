@@ -89,7 +89,7 @@ Within Wireshark, filter for ICMP traffic only - This is what Ping uses to test 
   <img src="https://i.imgur.com/w96ivrp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping it from within the Windows 10 VM. 
+Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping it from within the Windows 10 VM. 
   
   (It should work since Ping is ICMP traffic and we filtered Wireshark to inspect ICMP traffic) 
 </p>
@@ -98,7 +98,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
    <img src="https://i.imgur.com/3GdDS6m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Observe ping requests and replies within Wireshark,
+  Observe Ping Requests and Replies within Wireshark,
 </p>
 <p>
   <img src="https://i.imgur.com/GRXNNu6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -117,7 +117,7 @@ Retrieve the private IP address of the Ubuntu VM (linux-vm) and attempt to ping 
   <img src="https://i.imgur.com/LeckwaD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Open the Network Security Group your Ubuntu VM is using and disable incoming 
+  Back in Azure, Open the Network Security Group your Ubuntu VM is using and disable incoming 
   
 (inbound) ICMP traffic.
 </p>
@@ -156,7 +156,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe SSH Traffic</h3>
 <p>
-  Log back into the windows-vm, head back in Wireshark and start a packet capture up.
+  Log back into the Windows-VM, head back in Wireshark and start a packet capture up.
 
   Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
 </p>
@@ -168,7 +168,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Open PowerShell, and type: ssh labuser@private ip address 
 
-  Then Type the commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in Wireshark 
+  Then Type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
 </p>
 <p>
   <img src="https://i.imgur.com/mupELhr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
