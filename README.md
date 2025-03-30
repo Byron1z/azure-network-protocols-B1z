@@ -60,7 +60,7 @@ Now create your Windows Virtual Machine.
 </p>
 <br />
 
-<h2>Performing Activities on the Network</h2>
+<h2>Performing Activities on the Network - Actions and Observations</h2>
 <h3>Observe some ICMP traffic</h3>
 <p>
   Use Remote Desktop to connect to your Windows 10 Virtual Machine
