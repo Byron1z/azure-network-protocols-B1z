@@ -180,7 +180,7 @@ We Configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   From your Windows 10 VM, “SSH into” your Linux Ubuntu Virtual Machine (via its Private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
 
-  Open PowerShell, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
+  Open PowerShell as Administrator, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
 
   Then Type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
 </p>
