@@ -20,7 +20,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Wireshark</h2>
 
-- [Download](https://www.wireshark.org/download.html)
+- ### [Download](https://www.wireshark.org/download.html)
 
 <h2>High-Level Steps</h2>
 
