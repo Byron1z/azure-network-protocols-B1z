@@ -79,19 +79,19 @@ Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
   Wireshark Download link: https://www.wireshark.org/download.html 
 </p>
 <p>
-  <img src="https://i.imgur.com/sA2E4sp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Open Wireshark and start packet capture, Inspect Traffic.
 </p>
 <p>
-  <img src="https://i.imgur.com/ZbrwHdI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ZbrwHdI.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Within Wireshark, filter for ICMP traffic only - This is what Ping uses to test connectivity between two devices. 
 </p>
 <p>
-  <img src="https://i.imgur.com/w96ivrp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/w96ivrp.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping it from within the Windows 10 VM. 
@@ -99,15 +99,15 @@ Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   (It should work since Ping is ICMP traffic and we filtered Wireshark to inspect ICMP traffic) 
 </p>
 <p>
-  <img src="https://i.imgur.com/mMBHK5V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-   <img src="https://i.imgur.com/3GdDS6m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/mMBHK5V.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/3GdDS6m.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Observe Ping Requests and Replies within Wireshark,
 </p>
 <p>
-  <img src="https://i.imgur.com/GRXNNu6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/saR3keR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/GRXNNu6.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/saR3keR.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   The whole data we inspected was the ICMP Echo Request, meaning it was from Windows VM and the next packet is the Echo Reply from the Linux VM.
