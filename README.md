@@ -175,38 +175,38 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe SSH Traffic</h3>
 <p>
-  Log back into the Windows-VM, go back in Wireshark and start a packet capture up.
+  Log back into the Windows VM, go back into Wireshark, and start a packet capture.
 
   Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
 </p>
 <p>
-  <img src="https://i.imgur.com/bkpT8wD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/bkpT8wD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   From your Windows 10 VM, “SSH into” your Linux Ubuntu Virtual Machine (via its Private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
 
   Open PowerShell as Administrator, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
 
-  Then Type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
+  Then type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
 </p>
 <p>
-  <img src="https://i.imgur.com/mupELhr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/ig8lFEA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/PTuVVvC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/mupELhr.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ig8lFEA.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/PTuVVvC.png" height="90%" width="1000%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   What's cool about SSH is all the Traffic is Encrypted.
 </p>
 <p>
-  <img src="https://i.imgur.com/ZHmGyAW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/F9Mkjk6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/B0JGJJZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ZHmGyAW.png" height="90%" width="1000%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/F9Mkjk6.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/B0JGJJZ.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Exit the SSH connection by typing ‘exit’ and pressing [Enter]
 </p>
 <p>
-  <img src="https://i.imgur.com/GzpIg4I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/GzpIg4I.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -215,7 +215,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Back in Wireshark, filter for DHCP traffic only 
 </p>
 <p>
-   <img src="https://i.imgur.com/jLx2QAw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/jLx2QAw.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   From your Windows 10 VM, attempt to issue your VM a new IP address from the command line 
@@ -223,12 +223,12 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Open PowerShell as Admin and run: ipconfig /renew 
 </p>
 <p>
-  <img src="https://i.imgur.com/wBIJaj5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/wBIJaj5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Trying this gave me an Error!, 
 
-  Let's try this method and Observe the DHCP traffic appearing in Wireshark.
+  Let's try this method and observe the DHCP traffic appearing in Wireshark.
 
   Here's a Script to Run in PowerShell as Admin.
   
@@ -243,11 +243,11 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Then Run the File, ".\dhcp.bat"
 
-  Note the VM will loose connection but will automatically renew.
+  (Note the VM will loose connection but will automatically renew)
 </p>
 <p>
-  <img src="https://i.imgur.com/AyhzyA5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/6omwHYO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/AyhzyA5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/6omwHYO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -256,7 +256,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Back in Wireshark, filter for DNS traffic only 
 </p>
 <p>
-  <img src="https://i.imgur.com/GZrualt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   From your Windows 10 VM within a command line, use nslookup to see what disney.com and pixar.com’s IP addresses are.
@@ -264,11 +264,11 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Observe the DNS traffic being shown in Wireshark 
 </p>
 <p>
-   <img src="https://i.imgur.com/0lvCDgF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/QYc9QXY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/0lvCDgF.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/QYc9QXY.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  All DNS does is resolve host (Human Readable) names into IP Addresses.
+  All DNS does is resolve host (Human-Readable) names into IP Addresses.
 </p>
 <br />
 
@@ -277,13 +277,13 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   Back in Wireshark, filter for RDP traffic only (tcp.port == 3389) 
 </p>
 <p>
-  <img src="https://i.imgur.com/Ctc83Zi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/Ctc83Zi.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Observe the immediate non-stop spam of traffic!
 </p>
 <p>
-  <img src="https://i.imgur.com/TFDN3L4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/TFDN3L4.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
