@@ -226,7 +226,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/wBIJaj5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Trying this gave me an Error!, 
+  Trying this gave me an Error❗, 
 
   Let's try this method and observe the DHCP traffic appearing in Wireshark.
 
