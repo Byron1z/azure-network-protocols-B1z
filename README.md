@@ -145,7 +145,7 @@ To disable ICMP Traffic, we would create specific security rules to block inboun
 <p>
   This rule would prevent any ICMP traffic (such as ping requests) from being received by your Ubuntu VM or resource.
   
-  Hop back in the Windows 10 VM, observe the ICMP traffic in Wireshark and the command line Ping activity.
+  Hop back into the Windows 10 VM, observe the ICMP traffic in Wireshark, and the command line Ping activity.
 </p>
 <p>
 <img src="https://i.imgur.com/ErvCS4U.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>  
@@ -216,7 +216,9 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe DHCP Traffic</h3>
 <p>
-  Next, let's use Wireshark to filter for DHCP. DHCP (Dynamic Host Configuration Protocol) works on UDP ports 67 & 68. DHCP is used to assign IP addresses to machines. In this task, we will request a new IP Address with the command "ipconfig /renew". Once we enter the command, Wireshark will capture the DHCP traffic. 
+  Next, let's use Wireshark to filter for DHCP. DHCP (Dynamic Host Configuration Protocol) works on UDP ports 67 & 68. 
+  
+  DHCP is used to assign IP addresses to machines. In this task, we will request a new IP Address with the command "ipconfig /renew". Once we enter the command, Wireshark will capture the DHCP traffic. 
   
   Back in Wireshark, filter for DHCP traffic only.
 </p>
@@ -247,9 +249,9 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
 
-  Then Run the File, ".\dhcp.bat"
+  Then run the File ".\dhcp.bat"
 
-  (Note the VM will loose connection but will automatically renew)
+  (Note the VM will lose connection, but will automatically renew)
 </p>
 <p>
   <img src="https://i.imgur.com/AyhzyA5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -259,13 +261,13 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe DNS Traffic</h3>
 <p>
-  Back in Wireshark, filter for DNS traffic only 
+  Back in Wireshark, filter for DNS traffic only. DNS (Domain Name System) uses TCP & UDP port 53. 
 </p>
 <p>
   <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From your Windows 10 VM within a command line, use nslookup to see what disney.com and pixar.com’s IP addresses are.
+  From your Windows 10 VM within a command line, use "nslookup" to see what Disney.com and Pixar.com’s IP addresses are. This command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
 
   Observe the DNS traffic being shown in Wireshark 
 </p>
@@ -280,7 +282,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe RDP Traffic</h3>
 <p>
-  Back in Wireshark, filter for RDP traffic only (tcp.port == 3389) 
+  Back in Wireshark, filter for RDP (Remote Desktop Protocol) traffic only (TCP.port == 3389) 
 </p>
 <p>
   <img src="https://i.imgur.com/Ctc83Zi.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -294,9 +296,9 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
 
-  It's because the RDP (protocol) is constantly showing you a live stream from one computer/server to another, therefore the traffic is always being transmitted.
+  It's because the RDP (protocol) is constantly showing you a live stream from one computer/server to another; therefore, the traffic is always being transmitted.
 </p>
 <br />
 <p>
-  Now that we're finished observing the Network, Don't forget to clean up your Azure Environment! This will prevent you from unnecessary incurring additional charges. 
+  Now that we're finished observing the Network, don't forget to clean up your Azure Environment! This will prevent you from unnecessarily incurring additional charges. 
 </p>
