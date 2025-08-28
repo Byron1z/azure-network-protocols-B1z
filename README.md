@@ -96,7 +96,7 @@ Within Wireshark, filter for ICMP traffic only - This is what Ping uses to test 
 <p>
 Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping it from within the Windows 10 VM. 
   
-  (It should work since Ping is ICMP traffic and we filtered Wireshark to inspect ICMP traffic) 
+  (It should work since Ping is ICMP traffic, and we filtered Wireshark to inspect ICMP traffic) 
 </p>
 <p>
   <img src="https://i.imgur.com/mMBHK5V.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -122,7 +122,7 @@ Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   <img src="https://i.imgur.com/LeckwaD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Back in Azure, Open the Network Security Group your Ubuntu VM is using and disable incoming 
+  Back in Azure, open the Network Security Group your Ubuntu VM is using and disable incoming 
   
 (inbound) ICMP traffic.
 
@@ -145,7 +145,7 @@ To disable ICMP Traffic, we would create specific security rules to block inboun
 <p>
   This rule would prevent any ICMP traffic (such as ping requests) from being received by your Ubuntu VM or resource.
   
-  Hop back in the Windows 10 VM, Observe the ICMP traffic in Wireshark and the command line Ping activity.
+  Hop back in the Windows 10 VM, observe the ICMP traffic in Wireshark and the command line Ping activity.
 </p>
 <p>
 <img src="https://i.imgur.com/ErvCS4U.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>  
@@ -154,7 +154,7 @@ To disable ICMP Traffic, we would create specific security rules to block inboun
 <p>
 We configured a Rule that Denied Incoming ICMP traffic from any source to any destination for the Linux VM.
 
-  Now Re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by Deleting the Network Security rule. 
+  Now re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by Deleting the Network Security rule. 
 </p>
 <p>
   <img src="https://i.imgur.com/1z6ICuf.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -175,9 +175,13 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe SSH Traffic</h3>
 <p>
-  Log back into the Windows VM, go back into Wireshark, and start a packet capture.
+  Log back into the Windows VM, re-open Wireshark, and initiate a new packet capture.
 
-  Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22) 
+  Filter for SSH traffic only - (Secure Shell is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses TCP port 22)
+
+  For this task, we will use our SSH client on the Windows machine to connect to the Linux machine. SSH has no GUI; it just gives the user access to the machine's CLI (Command-Line Interface). 
+
+  When we use SSH into the Linux Ubuntu machine with the command prompt "ssh labuser@10.0.0.5".
 </p>
 <p>
   <img src="https://i.imgur.com/bkpT8wD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -195,7 +199,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/PTuVVvC.png" height="90%" width="1000%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  What's cool about SSH is all the Traffic is Encrypted.
+  What's cool about SSH is that all the Traffic is Encrypted.
 </p>
 <p>
   <img src="https://i.imgur.com/ZHmGyAW.png" height="90%" width="1000%" alt="Disk Sanitization Steps"/>
@@ -212,7 +216,9 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe DHCP Traffic</h3>
 <p>
-  Back in Wireshark, filter for DHCP traffic only 
+  Next, let's use Wireshark to filter for DHCP. DHCP (Dynamic Host Configuration Protocol) works on UDP ports 67 & 68. DHCP is used to assign IP addresses to machines. In this task, we will request a new IP Address with the command "ipconfig /renew". Once we enter the command, Wireshark will capture the DHCP traffic. 
+  
+  Back in Wireshark, filter for DHCP traffic only.
 </p>
 <p>
    <img src="https://i.imgur.com/jLx2QAw.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -220,7 +226,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   From your Windows 10 VM, attempt to issue your VM a new IP address from the command line 
 
-  Open PowerShell as Admin and run: ipconfig /renew 
+  Open PowerShell as Admin and run: "ipconfig /renew" 
 </p>
 <p>
   <img src="https://i.imgur.com/wBIJaj5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
