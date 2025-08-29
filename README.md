@@ -39,12 +39,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3>Create a Resource Group</h3>
 <p>
-<img src="https://i.imgur.com/jKk29xU.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jKk29xU.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Create a Virtual Network</h3>
 <p>
-<img src="https://i.imgur.com/dIW36H7.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dIW36H7.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Create Windows 10 Pro VM</h3>
@@ -52,16 +52,16 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Now, create your Windows 10 Pro Virtual Machine.
 </p>
 <p>
-  <img src="https://i.imgur.com/ZKjdzmc.png" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ZKjdzmc.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <h3>Create Linux Ubuntu VM</h3>
 <p>
-  Then create the Linux Ubuntu Virtual Machine.
+  Then, create the Linux Ubuntu Virtual Machine.
 </p>
 <p>
-<img src="https://i.imgur.com/3yJa5Qg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3yJa5Qg.png" height="80%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -82,19 +82,25 @@ Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
   <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open Wireshark and start packet capture, Inspect Traffic.
+Open Wireshark, start packet capture, and Inspect Traffic.
 </p>
 <p>
   <img src="https://i.imgur.com/ZbrwHdI.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within Wireshark, filter for ICMP traffic only - This is what Ping uses to test connectivity between two devices. 
+  Within Wireshark, filter for ICMP traffic only - This is what "Ping" uses to test connectivity between two devices.
+
+  Internet Control Message Protocol (ICMP) is a network layer protocol used by network devices to diagnose network communication or connection issues. 
+
+  - ICMP is mainly used to determine whether or not data is reaching its intended destination promptly. 
+
+  - The ICMP protocol is used on network devices, such as routers, and is crucial for error reporting and testing.
 </p>
 <p>
   <img src="https://i.imgur.com/w96ivrp.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping it from within the Windows 10 VM. 
+Retrieve the Private IP address of the Ubuntu VM (Linux-VM) and attempt to ping it from within the Windows 10 VM. 
   
   (It should work since Ping is ICMP traffic, and we filtered Wireshark to inspect ICMP traffic) 
 </p>
@@ -108,13 +114,17 @@ Retrieve the private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
 <p>
   <img src="https://i.imgur.com/GRXNNu6.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/saR3keR.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+  You can inspect each packet and see the actual data that is being sent in each ping.
+  
+  <img src="https://i.imgur.com/nFirUUB.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  The whole data we inspected was the ICMP Echo Request, meaning it was from Windows VM and the next packet is the Echo Reply from the Linux VM.
+  The whole data we inspected was the ICMP Echo Request, meaning it was from Windows VM, and the next packet is the Echo Reply from the Linux VM.
 </p>
 <br />
 
-<h3>Configuring a Firewall (Network Security Group)</h3>
+<h3>Configuring a Firewall (NSG - Network Security Group)</h3>
 <p>
   Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in PowerShell.
 </p>
