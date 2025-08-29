@@ -49,7 +49,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3>Create Windows 10 Pro VM</h3>
 <p>
-Now create your Windows 10 Pro Virtual Machine.
+Now, create your Windows 10 Pro Virtual Machine.
 </p>
 <p>
   <img src="https://i.imgur.com/ZKjdzmc.png" width="80%" alt="Disk Sanitization Steps"/>
@@ -256,6 +256,14 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   <img src="https://i.imgur.com/AyhzyA5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/6omwHYO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Here's a diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine. 
+</p>
+<p>
+  <img src="https://i.imgur.com/pxevHAU.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
+
+  It still gave the same IP Address of "10"
 </p>
 <br />
 
