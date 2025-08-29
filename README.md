@@ -197,16 +197,16 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/bkpT8wD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From your Windows 10 VM, “SSH into” your Linux Ubuntu Virtual Machine (via its Private IP address) – We’ll connect into the Ubuntu Virtual Machine using SSH.
+  From your Windows 10 VM, let's use “SSH" protocol into your Linux Ubuntu VM (via its Private IP address) – We’ll connect to the Ubuntu Virtual Machine using SSH.
 
   Open PowerShell as Administrator, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
 
-  Then type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark 
+  Then type the commands (username, pwd, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark. 
 </p>
 <p>
   <img src="https://i.imgur.com/mupELhr.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/ig8lFEA.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/PTuVVvC.png" height="90%" width="1000%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/PTuVVvC.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   What's cool about SSH is that all the Traffic is Encrypted.
