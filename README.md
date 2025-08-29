@@ -263,7 +263,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   <img src="https://i.imgur.com/pxevHAU.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 
-  It still gave the same IP Address of "10"
+  It still gave the same IP Address of "10.0.0.4".
 </p>
 <br />
 
