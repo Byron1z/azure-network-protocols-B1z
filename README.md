@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create a Windows 10 & Linux Ubuntu VM
 - Download Wireshark
 - Observe ICMP Traffic
-- Configuring a Firewall (Network Security Group)
+- Configuring a Firewall (Network Security Groups)
 - Observe SSH Traffic
 - Observe DHCP Traffic
 - Observe DNS Traffic
@@ -66,7 +66,7 @@ Now, create your Windows 10 Pro Virtual Machine.
 <br />
 
 <h2>Performing Activities on the Network - Actions and Observations</h2>
-<h3>Observe some ICMP traffic</h3>
+<h3>Observe ICMP traffic</h3>
 <p>
   Use Remote Desktop to connect to your Windows 10 Virtual Machine
 </p>
@@ -82,13 +82,17 @@ Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
   <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open Wireshark, start packet capture, and Inspect Traffic.
+  Open Wireshark, start packet capture, and Inspect Traffic.
+
+  Open Wireshark, click "Ethernet", then click the blue shark fin at the top left.
+
+  <img src="https://i.imgur.com/m1jJgK5.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   <img src="https://i.imgur.com/ZbrwHdI.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Within Wireshark, filter for ICMP traffic only - This is what "Ping" uses to test connectivity between two devices.
+  Next, within Wireshark, filter for "ICMP" traffic only - This is what the "Ping" command uses to test connectivity between two devices.
 
   Internet Control Message Protocol (ICMP) is a network layer protocol used by network devices to diagnose network communication or connection issues. 
 
@@ -124,7 +128,7 @@ Retrieve the Private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
 </p>
 <br />
 
-<h3>Configuring a Firewall (NSG - Network Security Group)</h3>
+<h3>Configure a Firewall in Azure (NSGs - Network Security Groups)</h3>
 <p>
   Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in PowerShell.
 </p>
