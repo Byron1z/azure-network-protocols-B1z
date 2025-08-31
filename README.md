@@ -16,7 +16,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Operating Systems Used </h2>
 
 - Windows 10 Pro (22H2)
-- Ubuntu Server (22.04)
+- Linux Ubuntu Server (22.04)
 
 <h2>Wireshark</h2>
 
@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create a Windows 10 & Linux Ubuntu VM
 - Download Wireshark
 - Observe ICMP Traffic
-- Configuring a Firewall (Network Security Groups)
+- Configuring a Firewall (NSGs - Network Security Groups)
 - Observe SSH Traffic
 - Observe DHCP Traffic
 - Observe DNS Traffic
@@ -119,12 +119,12 @@ Retrieve the Private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   <img src="https://i.imgur.com/GRXNNu6.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/saR3keR.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 
-  You can inspect each packet and see the actual data that is being sent in each ping.
+  You can inspect each packet and view the actual data being sent in each ping.
   
   <img src="https://i.imgur.com/nFirUUB.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  The whole data we inspected was the ICMP Echo Request, meaning it was from Windows VM, and the next packet is the Echo Reply from the Linux VM.
+  The entire data we inspected consisted of the ICMP Echo Request, which originated from the Windows VM, and the subsequent Echo Reply from the Linux VM.
 </p>
 <br />
 
@@ -168,7 +168,7 @@ To disable ICMP Traffic, we would create specific security rules to block inboun
 <p>
 We configured a Rule that Denied Incoming ICMP traffic from any source to any destination for the Linux VM.
 
-  Now re-enable the ICMP traffic for the Network Security Group your Ubuntu VM by Deleting the Network Security rule. 
+  Now re-enable the ICMP traffic for the Network Security Group on your Ubuntu VM by deleting the Network Security rule. 
 </p>
 <p>
   <img src="https://i.imgur.com/1z6ICuf.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -201,7 +201,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/bkpT8wD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From your Windows 10 VM, let's use “SSH" protocol into your Linux Ubuntu VM (via its Private IP address) – We’ll connect to the Ubuntu Virtual Machine using SSH.
+  From your Windows 10 VM, let's use the “SSH" protocol into your Linux Ubuntu VM (via its Private IP address) – We’ll connect to the Ubuntu Virtual Machine using SSH.
 
   Open PowerShell as Administrator, and type: ssh labuser@private ip address - "ssh labuser@10.0.0.5"
 
@@ -277,7 +277,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   <img src="https://i.imgur.com/pxevHAU.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 
-  It still gave the same IP Address of "10.0.0.4".
+  It still gave the same Private IP Address of "10.0.0.4".
 </p>
 <br />
 
