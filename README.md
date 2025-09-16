@@ -232,7 +232,14 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   Next, let's use Wireshark to filter for DHCP. DHCP (Dynamic Host Configuration Protocol) works on UDP ports 67 & 68. 
   
-  DHCP is used to assign IP addresses to machines. In this task, we will request a new IP Address with the command "ipconfig /renew". Once we enter the command, Wireshark will capture the DHCP traffic. 
+  The Dynamic Host Configuration Protocol (DHCP) is used to automatically and dynamically assign IP addresses to host machines. 
+  
+  In this task, we will request a new IP Address with the commands "ipconfig /release" and "ipconfig /renew". Once we enter the commands, Wireshark will capture the DHCP traffic.
+
+  - "ipconfig /release" - (Disconnect from DHCP Server)
+  - "ipconfig /renew" - (Reconnect to a DHCP Server)
+
+  Tip: You can use the "ipconfig" command to help troubleshoot problems with your local DHCP Server.
   
   Back in Wireshark, filter for DHCP traffic only.
 </p>
