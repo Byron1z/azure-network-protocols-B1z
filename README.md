@@ -82,7 +82,7 @@ Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
   <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Open Wireshark, start packet capture, and Inspect Traffic.
+  After the download, Open Wireshark, start packet capture, and Inspect Traffic.
 
   Open Wireshark, click "Ethernet", then click the blue shark fin at the top left.
 
