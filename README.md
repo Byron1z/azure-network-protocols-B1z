@@ -279,9 +279,9 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/6omwHYO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Here's a diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine.
+  Here's a Diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine.
 
-  Steps the DHCP Server does in action with the host machine (Client-1).
+  Steps the DHCP Server and host machine (Client-1) take in action when requesting an IP Address.
 
   - Discover
   - Offer
@@ -297,7 +297,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe DNS Traffic</h3>
 <p>
-  Back in Wireshark, filter for DNS traffic only. 
+  Return to Wireshark and filter for DNS traffic only. 
   
   DNS (Domain Name System) uses TCP & UDP port 53. 
 </p>
@@ -305,7 +305,11 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From your Windows 10 VM within a command line, use "nslookup" to see what Disney.com and Pixar.com’s IP addresses are. This command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
+  From your Windows 10 VM within a command line, use "nslookup" to see what Disney.com and Pixar.com’s IP addresses are. 
+  
+  The "nslookup" command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
+
+  - You can also use "nslookup" to verify if a DNS Server is running. 
 
   Observe the DNS traffic being shown in Wireshark 
 </p>
