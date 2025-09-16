@@ -281,7 +281,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   Here's a diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine.
 
-  Steps the DHCP Server in action with the host machine (Client-1).
+  Steps the DHCP Server does in action with the host machine (Client-1).
 
   - Discover
   - Offer
