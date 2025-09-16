@@ -279,18 +279,27 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/6omwHYO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Here's a diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine. 
+  Here's a diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine.
+
+  Steps the DHCP Server in action with the host machine (Client-1).
+
+  - Discover
+  - Offer
+  - Request
+  - Acknowledgement!
 </p>
 <p>
   <img src="https://i.imgur.com/pxevHAU.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 
-  It still gave the same Private IP Address of "10.0.0.4".
+  The DHCP Server still gave the same Private IP Address of "10.0.0.4", which was likely to happen.
 </p>
 <br />
 
 <h3>Observe DNS Traffic</h3>
 <p>
-  Back in Wireshark, filter for DNS traffic only. DNS (Domain Name System) uses TCP & UDP port 53. 
+  Back in Wireshark, filter for DNS traffic only. 
+  
+  DNS (Domain Name System) uses TCP & UDP port 53. 
 </p>
 <p>
   <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
