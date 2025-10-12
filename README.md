@@ -76,7 +76,7 @@ Now, create your Windows 10 Pro Virtual Machine.
 <p>
 Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
 
-  Wireshark Download link: https://www.wireshark.org/download.html 
+  **Wireshark Download link**: https://www.wireshark.org/download.html 
 </p>
 <p>
   <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
@@ -236,10 +236,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   
   In this task, we will request a new IP Address with the commands "ipconfig /release" and "ipconfig /renew". Once we enter the commands, Wireshark will capture the DHCP traffic.
 
-  - "ipconfig /release" - (Disconnect from DHCP Server)
-  - "ipconfig /renew" - (Reconnect to a DHCP Server)
+  - `ipconfig /release` - (Disconnect from DHCP Server)
+  - `ipconfig /renew` - (Reconnect to a DHCP Server)
 
-  Tip: You can use the "ipconfig" command to help troubleshoot problems with your local DHCP Server.
+  **Tip**: You can use the `ipconfig` command to help troubleshoot problems with your local DHCP Server.
   
   Back in Wireshark, filter for DHCP traffic only.
 </p>
@@ -249,13 +249,13 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 <p>
   From your Windows 10 VM, attempt to issue your VM a new IP address from the command line 
 
-  Open PowerShell as Admin and run: "ipconfig /renew" 
+  Open PowerShell as Admin and run: `ipconfig /renew` 
 </p>
 <p>
   <img src="https://i.imgur.com/wBIJaj5.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Trying this gave me an Error❗, 
+  Trying this gave me an Error❗. 
 
   Let's try this method and observe the DHCP traffic appearing in Wireshark.
 
@@ -263,10 +263,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   
   Open Notepad, Type
   
-  - ipconfig /release
-  - ipconfig /renew
+  - `ipconfig /release`
+  - `ipconfig /renew`
 
-  Save the Script in ProgramData as a file with a ".bat" extension (Not ".txt"). For convenience, you could name the file "dhcp.bat."
+  Save the Script in ProgramData as a file with a `.bat` extension (Not ".txt"). For convenience, you could name the file "dhcp.bat."
 
   Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
 
@@ -341,6 +341,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   It's because the RDP (protocol) is constantly showing you a live stream from one computer/server to another; therefore, the traffic is always being transmitted.
 </p>
 <br />
+
 <p>
+  
+  **Conclude**
+  
   Now that we're finished observing the Network, don't forget to clean up your Azure Environment! This will prevent you from unnecessarily incurring additional charges. 
 </p>
