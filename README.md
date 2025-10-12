@@ -221,7 +221,8 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/B0JGJJZ.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Exit the SSH connection by typing ‘exit’ and pressing [Enter]
+  
+  Exit the SSH connection by typing `‘exit’` and pressing [Enter]
 </p>
 <p>
   <img src="https://i.imgur.com/GzpIg4I.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
