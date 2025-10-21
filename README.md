@@ -13,10 +13,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Various Network Protocols (SSH, RDP, DNS, DHCP, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
-<h2>Operating Systems Used </h2>
+<h2>💻 Operating Systems Used</h2>
 
-- Windows 10 Pro (22H2)
-- Linux Ubuntu Server (22.04)
+- **Windows 10 Pro (22H2)**
+- **Linux Ubuntu Server (22.04)**
 
 <h2>Wireshark</h2>
 
@@ -49,7 +49,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h3>Create Windows 10 Pro VM</h3>
 <p>
-Now, create your Windows 10 Pro Virtual Machine.
+  
+Now, create your **Windows 10 Pro** Virtual Machine.
 </p>
 <p>
   <img src="https://i.imgur.com/ZKjdzmc.png" width="90%" alt="Disk Sanitization Steps"/>
@@ -58,7 +59,8 @@ Now, create your Windows 10 Pro Virtual Machine.
 
 <h3>Create Linux Ubuntu VM</h3>
 <p>
-  Then, create the Linux Ubuntu Virtual Machine.
+  
+  Then, create the **Linux Ubuntu** Virtual Machine.
 </p>
 <p>
 <img src="https://i.imgur.com/3yJa5Qg.png" height="80%" width="90%" alt="Disk Sanitization Steps"/>
