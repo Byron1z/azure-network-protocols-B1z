@@ -311,9 +311,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
   From your Windows 10 VM within a command line, use "nslookup" to see what Disney.com and Pixar.com’s IP addresses are. 
   
-  The "nslookup" command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
+  The `nslookup` command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
 
   - You can also use "nslookup" to verify if a DNS Server is running. 
 
