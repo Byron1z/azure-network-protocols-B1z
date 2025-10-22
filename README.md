@@ -242,8 +242,8 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   
   In this task, we will request a new IP Address with the commands "ipconfig /release" and "ipconfig /renew". Once we enter the commands in PowerShell, Wireshark will capture the DHCP traffic.
 
-  - `ipconfig /release` - (**Disconnect** from DHCP Server)
-  - `ipconfig /renew` - (**Reconnect** to a DHCP Server)
+  - `ipconfig /release` - (**Disconnect** ❌️ from DHCP Server)
+  - `ipconfig /renew` - (**Reconnect** ✅️ to a DHCP Server)
 
   **Tip**: You can use the `ipconfig` command to help troubleshoot problems with your local DHCP Server.
   
