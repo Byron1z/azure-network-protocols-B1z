@@ -10,7 +10,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDP, DNS, DHCP, HTTP/S, ICMP)
+- **Various Network Protocols (SSH, RDP, DNS, DHCP, HTTP/S, ICMP)**
 - Wireshark (Protocol Analyzer)
 
 <h2>💻 Operating Systems Used</h2>
@@ -70,7 +70,8 @@ Now, create your **Windows 10 Pro** Virtual Machine.
 <h2>🌐 Performing Activities on the Network - Actions and Observations</h2>
 <h3>Observe ICMP traffic</h3>
 <p>
-  Use Remote Desktop to connect to your Windows 10 Virtual Machine
+  
+  Use **Remote Desktop Connection** to connect to your Windows 10 Pro VM in Azure. 
 </p>
 <p>
 <img src="https://i.imgur.com/mumFoXf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -94,9 +95,10 @@ Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
   <img src="https://i.imgur.com/ZbrwHdI.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Next, within Wireshark, filter for "ICMP" traffic only - This is what the "Ping" command uses to test connectivity between two devices.
+  
+  Next, within Wireshark, filter for "ICMP" traffic only - This is what the "**Ping**" command uses to test connectivity between two devices.
 
-  Internet Control Message Protocol (ICMP) is a network layer protocol used by network devices to diagnose network communication or connection issues. 
+  **Internet Control Message Protocol (ICMP)** is a network layer protocol used by network devices to diagnose network communication or connection issues. 
 
   - ICMP is mainly used to determine whether or not data is reaching its intended destination promptly. 
 
@@ -233,14 +235,15 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>Observe DHCP Traffic</h3>
 <p>
-  Next, let's use Wireshark to filter for DHCP. DHCP (Dynamic Host Configuration Protocol) works on UDP ports 67 & 68. 
+  
+  Next, let's use Wireshark to filter for DHCP. **DHCP (Dynamic Host Configuration Protocol)** works on **UDP** ports 67 & 68. 
   
   The Dynamic Host Configuration Protocol (DHCP) is used to automatically and dynamically assign IP addresses to host machines. 
   
-  In this task, we will request a new IP Address with the commands "ipconfig /release" and "ipconfig /renew". Once we enter the commands, Wireshark will capture the DHCP traffic.
+  In this task, we will request a new IP Address with the commands "ipconfig /release" and "ipconfig /renew". Once we enter the commands in PowerShell, Wireshark will capture the DHCP traffic.
 
-  - `ipconfig /release` - (Disconnect from DHCP Server)
-  - `ipconfig /renew` - (Reconnect to a DHCP Server)
+  - `ipconfig /release` - (**Disconnect** from DHCP Server)
+  - `ipconfig /renew` - (**Reconnect** to a DHCP Server)
 
   **Tip**: You can use the `ipconfig` command to help troubleshoot problems with your local DHCP Server.
   
