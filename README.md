@@ -275,7 +275,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Save the Script in ProgramData as a file with a `.bat` extension (Not❗️ ".txt"). For convenience, you could name the file "*dhcp.bat*".
 
-  Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
+  Go to PowerShell as Admin, cd (Change Directory) to `c:\programdata`
 
   Then run the File "**.\dhcp.bat**"
 
