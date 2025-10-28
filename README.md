@@ -277,7 +277,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Go to PowerShell as Admin, cd (Change Directory) to "c:\programdata"
 
-  Then run the File ".\dhcp.bat"
+  Then run the File "**.\dhcp.bat**"
 
   (Note the VM will lose connection, but will automatically renew)
 </p>
