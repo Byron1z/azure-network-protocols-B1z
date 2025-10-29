@@ -302,7 +302,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 </p>
 <br />
 
-<h3>Observe DNS Traffic</h3>
+<h3>🌐 Observe DNS Traffic</h3>
 <p>
   Return to Wireshark and filter for DNS traffic only. 
   
