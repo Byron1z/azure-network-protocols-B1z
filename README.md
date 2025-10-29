@@ -313,7 +313,13 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 </p>
 <p>
 
-  From your Windows 10 VM within a command line, use "**nslookup**" to see what Disney.com and Pixar.com’s IP addresses are. 
+  From your Windows 10 VM within PowerShell command line, use "**nslookup**" to see what *Disney.com* and *Pixar.com's* IP addresses are.
+
+  - Run:
+  ```powershell
+  nslookup disney.com
+  nslookup pixar.com
+  ```
   
   The `nslookup` command essentially asks our DNS server what the IP addresses of Disney, Pixar, and Google.
 
