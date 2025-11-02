@@ -343,7 +343,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Back in Wireshark, filter for **RDP (Remote Desktop Protocol)** traffic only (**TCP port == 3389**).
 
-**RDP** is a **Microsoft protocol** that allows a user(s) to access and control a Windows computer remotely over a Network.
+**RDP** is a **Microsoft protocol** that allows a user(s) to access and control a Windows computer(s) remotely over a Network.
 </p>
 <p>
   <img src="https://i.imgur.com/Ctc83Zi.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
