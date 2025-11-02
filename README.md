@@ -305,16 +305,17 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
 <h3>🌐 Observe DNS Traffic</h3>
 <p>
+
   Return to Wireshark and filter for DNS traffic only. 
   
-  DNS (Domain Name System) uses TCP & UDP port 53. 
+  **DNS (Domain Name System)** uses **TCP & UDP port 53**. 
 </p>
 <p>
   <img src="https://i.imgur.com/GZrualt.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
-  From your Windows 10 VM within PowerShell command line, use "**nslookup**" to see what *Disney.com* and *Pixar.com's* IP addresses are.
+  From your Windows 10 VM within PowerShell command line, use `nslookup` to see what *Disney.com* and *Pixar.com's* IP addresses are.
 
   - Run:
   ```powershell
