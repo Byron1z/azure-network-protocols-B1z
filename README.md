@@ -133,7 +133,7 @@ Retrieve the Private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
 </p>
 <br />
 
-<h3>Configure a Firewall in Azure (NSGs - Network Security Groups)</h3>
+<h3>🔥🧱 Configure a Firewall in Azure (NSGs - Network Security Groups)</h3>
 <p>
   Initiate a Perpetual/non-stop Ping from your Windows 10 VM to your Ubuntu VM in PowerShell.
 </p>
@@ -141,21 +141,22 @@ Retrieve the Private IP address of the Ubuntu VM (Linux-VM) and attempt to ping 
   <img src="https://i.imgur.com/LeckwaD.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Back in Azure, open the Network Security Group your Ubuntu VM is using and disable incoming 
+
+  Back in Azure, open the Network Security Group your Ubuntu VM is using and **disable** incoming 
   
-(inbound) ICMP traffic.
+**(inbound) ICMP traffic**.
 
 To disable ICMP Traffic, we would create specific security rules to block inbound ICMP traffic in an Azure NSG, which would look like this:
 
 - Direction: Inbound
 
-- Protocol: ICMP
+- Protocol: **ICMP**
 
 - Source: Any (or specify a specific source)
 
 - Destination: Any (or specify a specific destination)
 
-- Action: Deny
+- Action: **Deny**
 </p>
 <p>
   <img src="https://i.imgur.com/hYg1GQO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
