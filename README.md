@@ -185,7 +185,8 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/Cjp3y8A.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Stop the ping activity with "Control-C".
+
+  Stop the ping activity with `Control-C`.
 </p>
 <p>
   <img src="https://i.imgur.com/8sLQVcT.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
