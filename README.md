@@ -338,9 +338,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 </p>
 <br />
 
-<h3>Observe RDP Traffic</h3>
+<h3>🖥 Observe RDP Traffic</h3>
 <p>
-  Back in Wireshark, filter for RDP (Remote Desktop Protocol) traffic only (TCP.port == 3389) 
+
+  Back in Wireshark, filter for **RDP (Remote Desktop Protocol)** traffic only (**TCP.port == 3389**) 
 </p>
 <p>
   <img src="https://i.imgur.com/Ctc83Zi.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
