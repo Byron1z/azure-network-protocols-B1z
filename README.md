@@ -289,9 +289,10 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
   <img src="https://i.imgur.com/6omwHYO.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
   Here's a Diagram for the Wireshark capture screenshot above showing how the DHCP Server offers/assigns a new IP Address to my Windows machine.
 
-  Steps the DHCP Server and host machine (Windows VM) take in action when requesting an IP Address.
+  Steps the DHCP Server and host machine (*Windows VM*) take in action when requesting an IP Address.
 
 DORA Process
 
