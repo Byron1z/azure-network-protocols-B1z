@@ -293,6 +293,8 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Steps the DHCP Server and host machine (Client-1) take in action when requesting an IP Address.
 
+DORA Process
+
   - Discover
   - Offer
   - Request
