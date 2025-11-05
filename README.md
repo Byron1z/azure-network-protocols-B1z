@@ -237,7 +237,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 </p>
 <br />
 
-<h3>🌐🖥 Observe DHCP Traffic</h3>
+<h3>🌐 🖥 Observe DHCP Traffic</h3>
 <p>
   
   Next, let's use Wireshark to filter for DHCP. **DHCP (Dynamic Host Configuration Protocol)** works on **UDP** ports **67 & 68**. 
