@@ -214,7 +214,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Open PowerShell as Administrator, and type: **ssh labuser@private ip address** - "ssh labuser@10.0.0.5"
 
-  Then type the commands (**username**, **pwd**, etc) into the Linux SSH connection and observe SSH traffic spam in Wireshark. 
+  Then type the commands (**username**, **pwd**, etc), **replying Yes/No** and clicking [**Enter**] into the Linux SSH connection and observe SSH traffic spam in Wireshark. 
 </p>
 <p>
   <img src="https://i.imgur.com/mupELhr.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
