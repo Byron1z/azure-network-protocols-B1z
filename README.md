@@ -324,7 +324,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   From your Windows 10 VM within PowerShell command line, use `nslookup` to see what *"Disney.com"* and *"Pixar.com's"* IP addresses are.
 
-  - Run in CLI:
+  - Run in the CLI:
   ```powershell
   nslookup disney.com
   nslookup pixar.com
