@@ -199,7 +199,7 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Log back into the Windows VM, re-open Wireshark, and initiate a new packet capture.
 
-  Filter for SSH traffic only - (**Secure Shell** is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses **TCP port 22**)
+  Filter for **SSH** traffic only - (**Secure Shell** is used to make a secure connection from one computer to another, SSH can be used to connect to it and administer that device, SSH uses **TCP port 22**)
 
   For this task, we will use our SSH client on the Windows machine to connect to the Linux machine. SSH has no GUI; it just gives the user access to the machine's CLI (Command-Line Interface). 
 
