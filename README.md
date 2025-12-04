@@ -298,12 +298,12 @@ We configured a Rule that Denied Incoming ICMP traffic from any source to any de
 
   Steps the DHCP Server and host machine (**Windows VM**) take in action when requesting an IP Address.
 
-**DORA Process**
+[**DORA Process**]
 
   - Discover
   - Offer
   - Request
-  - Acknowledgement!
+  - Acknowledgement✅️
 </p>
 <p>
   <img src="https://i.imgur.com/pxevHAU.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
