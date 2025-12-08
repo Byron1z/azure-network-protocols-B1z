@@ -81,7 +81,7 @@ Now, create your **Windows 10 Pro** Virtual Machine.
 <p>
 Within your Windows 10 Virtual Machine, Download Wireshark in the VM.
 
-  **Wireshark Download link**: https://www.wireshark.org/download.html 
+  🔹️**Wireshark Download link**: https://www.wireshark.org/download.html 
 </p>
 <p>
   <img src="https://i.imgur.com/sA2E4sp.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
