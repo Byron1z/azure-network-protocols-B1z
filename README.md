@@ -49,7 +49,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/dIW36H7.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 
-<h3>Create Windows 10 Pro VM</h3>
+<h3>🔷️ Create Windows 10 Pro VM</h3>
 <p>
   
 Now, create your **Windows 10 Pro** Virtual Machine.
@@ -59,7 +59,7 @@ Now, create your **Windows 10 Pro** Virtual Machine.
 </p>
 <br />
 
-<h3>Create Linux Ubuntu VM</h3>
+<h3>🔷️ Create Linux Ubuntu VM</h3>
 <p>
   
   Then, create the **Linux Ubuntu** Virtual Machine.
