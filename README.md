@@ -39,12 +39,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Setup Azure Resources</h2>
 
-<h3>Create a Resource Group</h3>
+<h3>🔹️ Create a Resource Group</h3>
 <p>
 <img src="https://i.imgur.com/jKk29xU.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 
-<h3>Create a Virtual Network</h3>
+<h3>🔹️ Create a Virtual Network</h3>
 <p>
 <img src="https://i.imgur.com/dIW36H7.png" width="90%" alt="Disk Sanitization Steps"/>
 </p>
