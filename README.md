@@ -28,13 +28,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create a Resource Group
 - Create a Windows 10 & Linux Ubuntu VM
-- Download Wireshark
+- Download **Wireshark**
 - Observe ICMP Traffic
 - Configuring a Firewall (NSGs - Network Security Groups)
-- Observe SSH Traffic
+- Observe **SSH** Traffic
 - Observe **DHCP** Traffic
 - Observe **DNS** Traffic
-- Observe RDP Traffic
+- Observe **RDP** Traffic
 <br />
 
 <h2>Setup Azure Resources</h2>
